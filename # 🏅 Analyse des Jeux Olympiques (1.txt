@@ -1,0 +1,92 @@
+# 🏅 Analyse des Jeux Olympiques (1896-2016)
+
+## 📄 Introduction
+
+Les Jeux Olympiques modernes, inaugurés en 1896 à Athènes, sont le plus grand événement sportif international. Ce projet analyse les performances des athlètes aux JO d'été et d'hiver de 1896 à 2016.
+
+L'objectif est d'explorer les tendances des Jeux Olympiques à travers les années, notamment :
+
+- La répartition des médailles par pays.
+- L'évolution du nombre de participants.
+- Les caractéristiques des athlètes (taille, poids, âge, etc.).
+- Une prédiction simple du type de médaille gagnée par un athlète.
+
+---
+
+## 📝 Données Utilisées
+
+- **Source** : [Kaggle - Olympic History Dataset](https://www.kaggle.com/datasets)
+- **Nombre d'enregistrements** : 271 116
+- **Nombre de colonnes** : 15
+- **Principales variables** :
+  - `Name` : Nom de l'athlète
+  - `Sex` : Sexe de l'athlète
+  - `Age` : Âge de l'athlète
+  - `Height` et `Weight` : Taille et poids
+  - `Team` et `NOC` : Pays et code pays
+  - `Games` et `Year` : Nom et année des JO
+  - `Sport` et `Event` : Discipline et épreuve
+  - `Medal` : Type de médaille gagnée (or, argent, bronze)
+
+---
+
+## 📊 Analyses effectuées
+
+### 1. **Exploration et préparation des données**
+
+- Chargement et nettoyage des données avec **Pandas**.
+- Gestion des valeurs manquantes (ex : tailles, poids manquants).
+
+### 2. **Visualisation des tendances**
+
+- Histogrammes et boxplots sur l'âge, la taille et le poids des athlètes.
+- Évolution du nombre d'athlètes au fil des années.
+- Nombre de médailles gagnées par pays avec **Seaborn**.
+
+### 3. **Modélisation et prédiction**
+
+- Encodage des variables qualitatives (**LabelEncoder**).
+- Division du dataset en train/test (**train\_test\_split**).
+- Prédiction du type de médaille avec une **régression logistique (sklearn)**.
+
+---
+
+## 🌟 Résultats Clés
+
+- Les pays les plus récompensés sont les **États-Unis, l'URSS et la Chine**.
+- L'âge moyen des médaillés varie selon les sports (ex : gymnastes plus jeunes, marathoniens plus âgés).
+- La régression logistique permet de prédire la médaille avec une précision de **XX%**.
+
+---
+
+## 🔧 Exécution du projet
+
+### 1. **Prérequis**
+
+Assurez-vous d'avoir **Python 3.x** et les librairies suivantes installées :
+
+```bash
+pip install pandas matplotlib seaborn scikit-learn
+```
+
+### 2. **Exécution du Notebook**
+
+Lancer le notebook Jupyter :
+
+```bash
+jupyter notebook mon_projetfinal.ipynb
+```
+
+---
+
+## 🌐 Liens Utiles
+
+- [Notebook Jupyter sur GitHub](#)
+- [Tableau Public - Visualisations](#)
+- [Post LinkedIn](#)
+
+---
+
+**Auteur** : [Aminata ]\
+**Contact** : 
+
